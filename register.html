@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Sign Up and Registeration</title>
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="details_box">
+                <form action="#" id="stud_deet">
+                    
+                    <!--email-->
+                    <label for="email" class="labels">Enter your email (your college ID):</label><br>
+                    <input type="email" class="inputs" name="email" pattern="[0-9]+@nitdelhi.ac.in" required><br>
+                    <label class="labels">Please select your branch:</label><br>
+                    <!---branch-->
+                    <input type="radio" class="inputs" name="branches" value="CSE">
+                    <label for="branches" class="labels">Computer Science Engineering</label><br>
+                    <input type="radio" class="inputs" name="branches" value="ECE">
+                    <label for="branches" class="labels">Electronics and Communication Engineering</label><br>
+                    <input type="radio" class="inputs" name="branches" value="EEE">
+                    <label for="branches" class="labels">Electronics and Elictrical Engineering</label><br>
+                    <!--year-->
+                    <label for="year" class="labels" >Enter your graduating year:</label><br>
+                    <input type="number" class="inputs" name="number" min="2021" max="2025" placeholder="2022" required><br>
+                    <!--username-->
+                    <label for="username" class="labels">Enter your username:</label><br>
+                    <input type="text" class="inputs" name="username" placeholder="areaofjha" required><br>
+                    <!--password-->
+                    <label for="password" class="labels">Enter your password: (length:6-8 characters, should contain digits or (!,@,#,%,*))</label><br>
+                    <input type="password" class="inputs" name="password" placeholder="Flower1" minlength="6" maxlength="8" ><br>
+                    <label for="password_confirmation" class="labels">Confirm your password: </label><br>
+                    <input type="password" class="inputs" name="password_confirmation" placeholder="Same password as above" size="8" style="width:200px" required><br><br>
+                    <button type="submit" class="btn" form="stud_deet" value="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
