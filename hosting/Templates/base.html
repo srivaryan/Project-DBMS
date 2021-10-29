@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Base page</title>
+        <!---External CSS Link-->
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+        {% comment %} <link rel="stylesheet" href="C:/Users/Aryan Srivastava/OneDrive/Desktop/project 3rd sem/hosting/static/css/base.css"> {% endcomment %}
+        {% comment %} href = "{%static 'line' %} {% endcomment %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <i>Blackboard</i>
+            </div>
+            <div class="menu">
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="/login"><i class="fa fa-fw fa-key"></i>Login</a>
+                <a href="/register"><i class="fa fa-fw fa-user"></i>Register</a>
+            </div>
+            <div id="content">
+
+                lorem ipsum dolor sit amet, consectetur adipis
+            </div>
+            
+
+        </div>
+    </body>
+</html
