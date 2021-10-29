@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <title>Login Page</title>
+    <head>
+        <body>
+            <h1>Welcome to Aryan and Aarya's project</h1>
+            <h2>Login Page</h2>
+            <hr>
+            <div id ="login page">
+                <form>
+                    <label for ="Roll Number">Roll Number:</label>
+                    <input type= "text" name="roll_number" id="roll_number" placeholder="" required>
+                    <br>
+                    <label for ="Password">Password:</label>
+                    <input type ="password" id="password" placeholder="" required>
+                    <br>
+                    <button type="submit">Login</button>
+                    <br>
+                    <button type="submit" href ="register.html" >NOT registered yet? Register NOW</button>
+                </form>
+
+            </div>
+        </body>
+    </head>
+</html> -->
+{%load static%}
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>LogIn</title>
+        <!--External CSS Link-->
+        <link rel="stylesheet" href="{%static 'login.css'%}">
+    </head>
+    <body>
+        <div id="container">
+            <div id="details_box">
+                <form action="#" id="stud_deet">
+                    
+                    <!--email-->
+                    <label for="email" class="labels">Enter your email (your college ID):</label>
+                    <input type="email" class="inputs" name="email" pattern="[0-9]+@nitdelhi.ac.in" id="mail" value="" required><br><br>
+                    
+                    <label for="password" class="labels">Enter your password </label>
+                    <input type="password" class="inputs" name="password" id="pswrd" value=""><br><br>
+                    <button type="submit" id="btn_hidden" form="stud_deet" value="submit" ></button> 
+                    <button type="button"  class="btn" onclick="submit_btn()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="../js/login.js"></script>
+            
+            
+    </body>
+</html>

@@ -1,0 +1,43 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Search A Book</title>
+        <!---External CSS Link-->
+        <link rel="stylesheet" href="{% static 'base.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'home.css'%}">
+        <link rel="stylesheet" href="{% static 'book_search.css'%}">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <i>Blackboard</i>
+            </div>
+            <div class="menu">
+                <a href="#" onclick="toggle_sidebar()"><i class="fa fa-fw fa-bars"></i></a>
+                <a  href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="#"><i class="fa fa-fw fa-key"></i>Username</a>
+                <a href="base.html"><i class="fa fa-fw fa-user"></i>LogOut</a>
+            </div>
+            <div id="side_navigation">
+                <a href="#" onclick="toggle_sidebar()" id="cross">&times</a>
+                <a href="#" class="no_cross active">Book Exchange</a>
+                <a href="#" class="no_cross">Concern Redressal</a>
+                <a href="#" class="no_cross">Previous Year Questions</a>
+            </div>
+            <div id="content_main">  
+                <div class="container container-padding50">
+                    <input type="text" class="js-userinput container-textinput" value="Type what you want to search"/>
+                    <button class="js-go container-button">Go!</button>
+                    
+                </div>            
+
+            </div>
+            
+            
+
+        </div>
+        <script src="../js/home.js"></script>
+    </body>
+</html>

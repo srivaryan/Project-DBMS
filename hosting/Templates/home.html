@@ -1,0 +1,41 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <!---External CSS Link-->
+        <link rel="stylesheet" href="{% static 'base.css'%}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'home.css'%}">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <i>Blackboard</i>
+            </div>
+            <div class="menu">
+                <a href="#" onclick="toggle_sidebar()"><i class="fa fa-fw fa-bars"></i></a>
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="#"><i class="fa fa-fw fa-key"></i>Username</a>
+                <a href="base.html"><i class="fa fa-fw fa-user"></i>LogOut</a>
+            </div>
+            <div id="side_navigation">
+                <a href="#" onclick="toggle_sidebar()" id="cross">&times</a>
+                <a href="search_book.html" class="no_cross">Book Exchange</a>
+                <a href="#" class="no_cross">Concern Redressal</a>
+                <a href="#" class="no_cross">Previous Year Questions</a>
+            </div>
+            <div id="content">              
+
+            </div>
+            <div id="side_bar">
+                <p>Next Class: </p><br>
+                <p>Due Assignments:</p><br><br>
+                <p>Borrowed Books: </p><br><br>
+            </div>
+            
+
+        </div>
+        <script src="../js/home.js"></script>
+    </body>
+</html>
